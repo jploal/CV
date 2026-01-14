@@ -68,7 +68,7 @@ section {
 }
 
 @media (max-width: 800px) {
-    secion {
+    section {
         grid-template-columns: 1fr;
     }
 }
@@ -139,3 +139,4 @@ li::before {
     }
 
 }
+
