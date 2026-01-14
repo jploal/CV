@@ -52,7 +52,7 @@ address a {
     text-decoration: none;
     /* quita el subrayado */
     font-weight: bold;
-    transition: color 0.3 s;
+    transition: color 0.3s;
 }
 
 address a:hover {
@@ -68,7 +68,7 @@ section {
 }
 
 @media (max-width: 800px) {
-    section {
+    secion {
         grid-template-columns: 1fr;
     }
 }
@@ -139,6 +139,3 @@ li::before {
     }
 
 }
-
-
-
