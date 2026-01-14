@@ -45,6 +45,16 @@ h2 {
     text-align: right;
     line-height: 1.6;
 }
+.contacto a {
+    color: #1a73e8;        /* color del enlace */
+    text-decoration: none; /* quita el subrayado */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contacto a:hover {
+    color: #0b4da0;        /* color al pasar el mouse */
+}
 
 .seccion {
     display: grid;
@@ -121,4 +131,5 @@ li::before {
     .header {
         flex-wrap: nowrap;
     }
+
 }
