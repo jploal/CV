@@ -1,0 +1,124 @@
+/* Reset y tipografía */
+body {
+    margin: 0;
+    padding: 0;
+    background: #eaeaea;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hoja A4 */
+.hoja {
+    width: 210mm;
+    min-height: 297mm;
+    background: white;
+    margin: 30px auto;
+    padding: 25mm 20mm;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #555;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Para pantalla pequeña */
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.contacto {
+    font-size: 12px;
+    text-align: right;
+    line-height: 1.6;
+}
+
+.seccion {
+    display: grid;
+    grid-template-columns: 22% 1fr;
+    margin-bottom: 18px;
+    gap: 15px;
+}
+
+@media (max-width: 800px) {
+    .seccion {
+        grid-template-columns: 1fr;
+    }
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 13px;
+    border-top: 2px solid black;
+    padding-top: 6px;
+}
+
+.contenido {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* Listas */
+ul {
+    padding-left: 1.2em;
+    margin: 5px 0;
+}
+
+li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 6px;
+    padding-left: 16px;
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    background-color: #2c3e50;
+    border-radius: 50%;
+}
+
+.puesto {
+    font-weight: bold;
+}
+
+.empresa {
+    font-style: italic;
+    font-size: 12px;
+    color: #444;
+}
+
+@media print {
+    body {
+        background: white;
+    }
+
+    .hoja {
+        box-shadow: none;
+        margin: 0;
+        width: 210mm;
+        min-height: 297mm;
+        padding: 25mm 20mm;
+    }
+
+    .header {
+        flex-wrap: nowrap;
+    }
+}
