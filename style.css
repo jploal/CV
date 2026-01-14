@@ -8,25 +8,25 @@ body {
 
 /* Hoja A4 */
 .hoja {
-    width: 210 mm;
-    min-height: 297 mm;
+    width: 210mm;
+    min-height: 297mm;
     background: #fffaf0;
-    margin: 30 px auto;
-    padding: 25 mm 20 mm;
-    box-shadow: 0 0 10 px rgba (0, 0, 0, 0.2);
+    margin: 30px auto;
+    padding: 25mm 20mm;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 }
 
 /* Encabezado */
 h1 {
     margin: 0;
-    font-size: 32 px;
+    font-size: 32px;
 }
 
 h2 {
     margin: 0;
-    font-size: 14 px;
-    letter-spacing: 2 px;
+    font-size: 14px;
+    letter-spacing: 2px;
     color: #555;
 }
 
@@ -35,13 +35,13 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     /* Para pantalla pequeña */
-    border-bottom: 2 px solid black;
-    padding-bottom: 10 px;
-    margin-bottom: 20 px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 address {
-    font-size: 12 px;
+    font-size: 12px;
     text-align: right;
     line-height: 1.6;
 }
@@ -62,52 +62,52 @@ address a:hover {
 
 section {
     display: grid;
-    grid-template-columns: 22 % 1 fr;
-    margin-bottom: 18 px;
-    gap: 15 px;
+    grid-template-columns: 22% 1fr;
+    margin-bottom: 18px;
+    gap: 15px;
 }
 
-@media (max-width: 800 px) {
+@media (max-width: 800px) {
     section {
-        grid-template-columns: 1 fr;
+        grid-template-columns: 1fr;
     }
 }
 
 .titulo {
     font-weight: bold;
-    font-size: 13 px;
-    border-top: 2 px solid black;
+    font-size: 13px;
+    border-top: 2px solid black;
     margin: 0;
-    padding-top: 6 px;
+    padding-top: 6px;
 }
 
 .contenido {
-    font-size: 13 px;
+    font-size: 13px;
     line-height: 1.6;
 }
 
 /* Listas */
 ul {
-    padding-left: 1.2 em;
-    margin: 5 px 0;
+    padding-left: 1.2em;
+    margin: 5px 0;
 }
 
 li {
     list-style: none;
     position: relative;
-    margin-bottom: 6 px;
-    padding-left: 16 px;
+    margin-bottom: 6px;
+    padding-left: 16px;
 }
 
 li::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 6 px;
-    width: 8 px;
-    height: 8 px;
+    top: 6px;
+    width: 8px;
+    height: 8px;
     background-color: #2c3e50;
-    border-radius: 50 %;
+    border-radius: 50%;
 }
 
 
@@ -117,7 +117,7 @@ li::before {
 
 .empresa {
     font-style: italic;
-    font-size: 12 px;
+    font-size: 12px;
     color: #444;
 }
 
@@ -129,9 +129,9 @@ li::before {
     .hoja {
         box-shadow: none;
         margin: 0;
-        width: 210 mm;
-        min-height: 297 mm;
-        padding: 25 mm 20 mm;
+        width: 210mm;
+        min-height: 297mm;
+        padding: 25mm 20mm;
     }
 
     .header {
@@ -139,5 +139,6 @@ li::before {
     }
 
 }
+
 
 
