@@ -10,6 +10,7 @@ body {
 .hoja {
     width: 210mm;
     min-height: 297mm;
+    max-width: 100%;
     background: #fffaf0;
     margin: 30px auto;
     padding: 25mm 20mm;
@@ -139,4 +140,5 @@ li::before {
     }
 
 }
+
 
